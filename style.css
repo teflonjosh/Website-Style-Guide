@@ -1,0 +1,197 @@
+/* Stye for Developer Resources */
+* {
+    cursor: grabbing; }
+    body {
+    background-color: #f0f1f1;
+    color: #210802}
+    a {
+    color:rgb(6, 0, 0);}  
+    table {
+    width: auto;
+    text-align: left;}
+    th, td {
+    padding 10px 10px 10px 10px;}
+    th {
+    border-bottom: 2px solid #1111;
+    border-top: 1px solid rgb(4, 11, 93)}
+    tr.even{
+    background-color:#dce0e4;}
+    tr.hover {
+    background-color: #1a1b1b;}
+    .center {
+    margin-left: auto;
+    margin-right: auto;}
+    header {
+    text-align: center;
+    font-style: italic;
+    position: sticky;
+    top: 0;
+    padding: 2x;
+    background-color: #dce0e4;
+    color: black;
+    border: solid;
+    width: 100%;
+    z-index: 1;} 
+    Footer {
+    font-style: italic;
+    text-align: center;
+    background-color: #dce0e4;
+    color: black;
+    border: solid;
+    max-width: 100%;}
+    h3 {
+    font-style: italic;
+    text-align: center;
+    color: #1d0f0f; 
+    transition: transform .7s ease-in-out;}
+        h3:hover {
+        color: #370404;   
+        text-decoration: overline;
+        transform: rotate(180deg);}    
+    div {
+    text-align: center;} 
+    hr {
+    color:#dce0e4;} 
+    a:hover {
+    font-size: 120%;
+    color:rgb(176, 20, 20);}
+    .att {
+    font-size: xx-small;
+    font-style: italic;}
+    img {
+    transition: transform .7s ease-in-out;}
+        img:hover {
+            transform: rotate(180deg)}
+/* STYLE SHEET FOR WEBSITE STYLE */
+.nav ul li {
+    display: inline-block;}
+body {
+    background-color: rgb(241, 237, 230);
+    text-align: center;}
+H2 {
+    text-decoration: underline;}
+    H2:hover {
+        text-transform: uppercase;}
+#even {
+    display: block;
+    margin-left: 0px;
+    margin-right: 200px }
+HR {
+    text-decoration: dotted;}
+
+body {
+    max-width: 100%;}
+.cool-blue {
+    color: #2d5dcc; }
+.pink {
+    color: #d957d9; }
+.purple {
+    color: #9648ab; }
+.red  {
+    color:#da072c; }
+.candy {
+    color:#ff0800; }
+.gold {
+    color: #FFD700;}
+.yellow {
+    color: #FFFF00 }
+.salmon {
+    color: 	#FA8072}
+.lime {
+    color: #00FF00 }
+.springGreen {
+    color: #00FF7F}
+.green {
+    color: #008000}
+.olive {
+    color: #808000}
+.teal {
+    color: #008080}
+.turquoise {
+    color: #40E0D0}
+.blue {
+    color:#0000FF }
+.maroon {
+    color: #800000}
+.indigo {
+    color: #4B0082}
+.khaki {
+    color: #F0E68C }
+.gray {
+    color: #808080 }
+.darkSlate {
+    color: #2F4F4F }
+.black {
+    color: #000000}
+.serif {
+  font-family: serif; }
+.sanSerif {
+    font-family: sans-serif; }
+.mono {
+    font-family:monospace;}
+.fantasy {
+    font-family: fantasy;}
+.cursive {
+    font-family:cursive;}
+.guide {
+    text-decoration: line-through;}
+        .guide:hover {
+        text-decoration: none; }
+/* Headings */
+.H1 { 
+    font-size: 36px;
+    font-weight: bold;}
+.H2 { 
+    font-size: 24px;
+    font-weight: bold;}
+.H3 {
+    font-size: 21px;
+    font-weight: bold;}
+/* BUTTON */
+Button {
+	box-shadow: 2px 3px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:10px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-family:Arial;
+	font-size:12px;
+	padding:5px 14px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed; }
+        Button:hover {
+            background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+            background-color:#bab1ba;}
+                Button:active {
+                    position:relative;
+                    top:1px;}
+/* JAVA CSS */
+/* NEEDS TO MATCH JAVA 3333333 */ 
+.fade-in {
+      opacity: 0;
+      transition: opacity 250ms ease-in;}
+      .fade-in.appear {
+        opacity: 1;}
+  /* NEEDS TO MATCH JAVA 3333333 */ 
+    .from-left {
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);}
+      .from-right {
+        -webkit-transform: translateX(50%);
+        transform: translateX(50%);}
+  /* NEEDS TO MATCH JAVA 3333333 */ 
+    .from-left, 
+    .from-right {
+      transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
+      transition: opacity 250ms ease-in, transform 400ms ease-in;
+      transition: opacity 250ms ease-in, transform 400ms ease-in,
+        -webkit-transform 400ms ease-in;
+      opacity: 0; }
+        .from-left.appear,
+        .from-right.appear {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+          opacity: 1;}
