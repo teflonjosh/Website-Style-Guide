@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Website Style Guide </title>
+            <!--From codecademy.com; Challenge Project: Build Your Own Cheat Sheet-->     <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/CSS3_and_HTML5_logos_and_wordmarks.svg/791px-CSS3_and_HTML5_logos_and_wordmarks.svg.png?20150111171555">
+            <link rel="stylesheet" href="style.css">
+    </head>
+     <section id="land">
+    <!--HEADER -->
+    <header>
+        <div class="nav">
+            <ul id="linksnav">
+                <li>|| <a href="https://teflonjosh.github.io/ResourcePortfolio/">Home</a> |</li>
+                <li><a href="#colors"> Colors</a> |</li>
+                <li><a href="#fonts"> Font Famailies</a> |</li>
+                <li><a href="#styles"> Font Styles</a> |</li>
+                <li><a href="#headings">Headings</a> ||</li>
+            </ul>
+        </div>
+    </header>
+    
+    <main>
+      <section class="home"> 
+        <h2>Website Style Guide</h2>
+      </section>
+
+    <br>
+    <section id="basic">
+          <section class="slidein from-left">
+            <div class=image>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/85px-CSS3_logo_and_wordmark.svg.png" loading="lazy"/>
+            </div>
+                <div class="att">
+            <a href="https://commons.wikimedia.org/wiki/File:CSS.3.svg"target="_blank">Nikotaf</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>, via Wikimedia Commons
+                 <br>
+            </div>
+        </section>
+    </section>
+    
+    <section id="colors">
+        <br>
+        <hr>
+             <h3>Colors</h3>
+    <section class="slidein from-left">
+                <p class="pink">Pink #d957d9</p>
+                <p class="purple">Purple #9648ab</p>
+                <p class="indigo">Indigo #4B0082</p>
+        </section>
+    <section class="slidein from-right">
+        <div id="even">
+                <p class="red">Red #da072c</p>
+                <p class="candy">Candy #ff0800</p>
+                <p class="maroon">Maroon #800000</p>
+                <p class="salmon">Salmon #FA8072</p>
+            </div>
+    </section>
+        <section class="slidein from-left">
+                <p class="olive">Olive #808000</p>
+                <p class="gold">Gold #FFD700</p>
+                <p class="yellow">Yellow #FFFF00</p>
+                <p class="khaki">Khaki #F0E68C</p>
+        </section>
+    <section class="slidein from-right">
+        <div id="even">
+                <p class="green">Green  #008000</p>
+                <p class="lime">Lime #00FF00</p>
+                <p class="springGreen">Spring Green #00FF7F</p>
+            </div>
+         </section>
+    <section class="slidein from-left">
+                <p class="blue">Blue #0000FF</p>
+                <p class="cool-blue">Cool Blue #2d5dcc</p>
+                <p class="teal">Teal #008080</p>
+                <p class="turquoise">Turquoise #40E0D0</p>
+        </section>
+     <section class="slidein from-right">
+        <div id="even">
+                <p class="gray">Gray #808080</p>
+                <p class="darkSlate">Dark Slate Gray #2F4F4F</p>
+                <p class="black">Black #000000</p>
+            </div>
+     </section>
+        </section>
+                <br>
+            <hr>
+        </section> 
+   
+    <label><h3>HEX Value Generator</h3></label>
+        <section class="slidein from-left">
+            <section id='color-form'>
+                <form name="myform" action="https://echo.zuplo.io/" method="POST">
+                    <p> Can't find the color you need above? That's alright!</p>
+                        <p> This tool allows you to find the color or shade you want and generate the HEX value, which can then be specified in CSS!</p>
+                        Select a color here
+                    <input type="color" name="color">
+        <br>
+            <br>
+                And then
+                    <input type="button" name="button" value="Generate HEX Value!"
+                onClick="testResults(this.form)">
+             </form> 
+        </section> 
+    </section> 
+        <br>
+            <hr>
+    <script>
+        // Script for JS Function 
+        function testResults (form) {
+            let formData = new FormData(form);
+            let object = {};
+            formData.forEach(function(value, key){
+            object[key] = value;
+            });
+        var json = JSON.stringify(object);
+         alert(JSON.stringify(Object.fromEntries(formData)));
+            }
+     </script>
+ 
+    <section id="fonts">
+        <h3> Font Famailies</h3>
+            <section class="slidein from-right">
+                <p>In web design, five standard font families are easily readable by most browsers. These are:</p>
+                <div id="even">
+                    <p class="serif">Serif</p>
+                    <p class="sanSerif">Sans Serif</p>
+                    <p class="mono">Monospace</p>
+                    <p><span class="fantasy">Fantasy</span></p>
+                    <p class="cursive">Cursive</p>
+                </div>
+         </section>
+    </section>
+            <hr>
+
+        <section id="styles">
+            <h3>Font Styles</h3>
+    <section class="slidein from-right">
+                <p> There are thousands of font styles within font families. Some commonly used examples of these are: </p>
+        </section>
+    <section class="slidein from-left">   
+                <p class="guide">In Sans-Serif Font:</p>
+                 <p style="font-family: Arial, sans-serif;">Arial</p>
+                 <p style="font-family: Helvetica, sans-serif;">Helvetica</p>
+                 <p style="font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;">Avantgarde</p>
+                 <p style="font-family: Noto Sans, sans-serif;">Noto Sans</p>   
+                 <p style="font-family: Optima, sans-serif;">Optima</p>
+        </section>
+    <section class="slidein from-left">  
+                 <div id="even">  
+        <p class="guide">In Serif Font:</p>
+                 <p style="font-family: Times New Roman, serif;">Times New Roman</p>
+                 <p style="font-family: Didot, serif;">Didot</p>
+                 <p style="font-family: Bookman, URW Bookman L, serif;">Bookman</p>         
+                 <p style="font-family: American Typewriter, serif;">American Typewriter</p>
+                 <p style="font-family: New Century Schoolbook, TeX Gyre Schola, serif;">New Century Schoolbook</p>
+             </div> 
+        </section>
+    <section class="slidein from-right">  
+        <p class="guide">In Monospace Font:</p>
+                 <p style="font-family:Andale Mono, monospace">Andale</p>
+                 <p style="font-family: Arial, sans-serif;">Arial</p>
+                 <p style="font-family:Courier New, monospacee">Courier New</p>
+                 <p style="font-family:DejaVu Sans Mono, monospace">DejaVu Sans Mono</p>
+                 <p style="font-family:OCR A Std, monospace">OCR A Std</p>
+        </section>
+    <section class="slidein from-left">  
+                 <div id="even">  
+        <p class="guide">In Cursive Font:</p>
+                <p style="font-family: Bradley Hand, cursive;">Bradley Hand</p>
+                <p style="font-family:Comic Sans MS, Comic Sans">Comic Sans</p>
+                <p style="font-family: Snell Roundhand, cursive;">Snell Roundhand</p>
+                <p style="font-family: URW Chancery L;">URW Chancery L</p>
+            </div>
+        </section>
+    <section class="slidein from-right">  
+        <p class="guide">In Fanstasy Font:</p>
+                <span style="font-family: Luminari, fantasy;">Luminari</span></p>
+                <span style="font-family: Impact, fantasy;">Impact</span></p>
+                <span style="font-family: Chalkduster, fantasy;">Chalkduster</span> </p>
+                <span style="font-family: Marker Felt, fantasy;">Marker Felt</span> </p>
+            </section>
+        </section>  
+     <hr>
+    <section id="headings">
+        <h3>Headings</h3>
+        <section class="slidein from-left">
+            <div id="even">    
+       <p class="H1">H1 Heading Size</p>
+           <p class="H2">H2 Heading Size</p>
+               <p class="H3">H3 Heading Size</p>
+                    <h4>H4 Heading Size</h4>
+                       <h5>H5 Heading Size</h5>
+                           <H6>H6 Heading Size</h6>
+               </div>
+            <p>General Paragraph Text Size</p>
+       <hr>
+    </section>
+        </section>  
+    </main>
+    <!--SCRIPT -->
+    <script>
+    // MATCH CSS 222222 
+    const sectionOne = document.querySelector(".home");
+    // MATCH CSS 44444444
+    const sliders = document.querySelectorAll(".slidein");
+    
+    const sectionOneOptions = {
+    rootMargin: "-200px 0px 0px 0px"
+    };
+    
+    const sectionOneObserver = new IntersectionObserver(function(
+    entries,
+    sectionOneObserver
+    ) {
+    entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      header.classList.add("nav-scrolled");
+    } else {
+      header.classList.remove("nav-scrolled");
+    }
+    });
+    },
+    sectionOneOptions);
+    
+    sectionOneObserver.observe(sectionOne);
+    
+    const appearOptions = {
+    threshold: 0,
+    rootMargin: "0px 0px -250px 0px"
+    };
+    
+    const appearOnScroll = new IntersectionObserver(function(
+    entries,
+    appearOnScroll
+    ) {
+    entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add("appear");
+      appearOnScroll.unobserve(entry.target);
+    }
+    });
+    },
+    appearOptions);
+    
+    // MATCH CSS 44444444
+    sliders.forEach(slider => {
+    appearOnScroll.observe(slider);
+    });
+        </script>
+    <footer>
+        <div class="nav">
+            <ul id="linksnav">
+                <li>|| <a href="#land">Top of Page</a> |</li>
+                <li> Images from <a href="https://commons.wikimedia.org/wiki/Main_Page "target="_blank">Wikimedia Commons</a> and sourced in page | </li>
+                <li><a href="mailto:josh.michael.hill@gmail.com">Contact Me!</a> ||</li>
+            </ul>
+        </div>		
+    <div class="att">
+            *Tab Icon from <a href="https://commons.wikimedia.org/wiki/File:CSS3_and_HTML5_logos_and_wordmarks.svg"target="_blank">daPhyre</a>, <a href="https://creativecommons.org/licenses/by/3.0"target="_blank">CC BY 3.0</a>, via Wikimedia Commons 
+    </div>
+        </footer>
+    </body>
+        </html>
